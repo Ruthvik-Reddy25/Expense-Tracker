@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>💰 Expense Tracker</h1>
+        <p class="subtitle">Track your daily income & expenses</p>
+
+        <div class="balance">
+            <h3>Current Balance</h3>
+            <h2 id="balance">₹0</h2>
+        </div>
+
+        <form id="expenseForm">
+            <input type="text" id="text" placeholder="Expense description" required>
+            <input type="number" id="amount" placeholder="Amount (use - for expense)" required>
+            <button>Add Transaction</button>
+        </form>
+
+        <h3>History</h3>
+        <ul id="list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
